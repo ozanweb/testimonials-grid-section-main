@@ -160,7 +160,26 @@ section.text p {
 
 }
 
+@media screen and (min-width: 819px) {
+  body {
+    position: relative;
+    height: 100vh;
+  }
+  .main {
+    position: absolute;
+    top: 50%;
+    left: 0; right: 0;
+    margin: 0 1rem;
+    transform: translateY(-50%);
+  }
+}
+
 @media screen and (min-width: 1023px) {
+
+  :root {
+    font-size: 13px;
+  }
+
   .grid-container {
     grid-gap: 1.5rem;
     max-width: 1024px;
